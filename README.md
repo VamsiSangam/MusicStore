@@ -1,2 +1,2 @@
 # MusicStore
-A fun Music Store app created while learning Django
+A fun Music Store app created while learning Django from the [MVA](http://mva.microsoft.com/) course [Developing Websites using Python and Django](https://mva.microsoft.com/en-US/training-courses/developing-websites-using-python-and-django-11415). Under development. To run the code, open in Visual Studio, make migrations and start the server.
