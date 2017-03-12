@@ -1,0 +1,73 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Music Store</h1>
+    <p class="lead">
+        Music Store is a fun Django app created while learning Django from a really awesome course on 
+        <a href="http://mva.microsoft.com/" target="_tab">Microsoft Virtual Academy (MVA)</a> about Django.
+        Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.
+    </p>
+    <p>
+        <a href="https://mva.microsoft.com/en-US/training-courses/developing-websites-using-python-and-django-11415" target="_tab" class="btn btn-primary btn-large">
+            Django MVA Course &raquo;
+        </a>
+
+        <a href="https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360" target="_tab" class="btn btn-success btn-large">
+            Python MVA Course &raquo;
+        </a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>About this App</h2>
+        <p>
+            This is a really tiny Music Store app created in Django and uses SQLLite database, which stores and manages records of various artists and
+            albums. The database has 2 tables, Artist table and Albums table. The functionalities currently implemented are -
+        </p>
+    </div>
+    <div class="col-md-12">
+        <h2>Functionalities currently implemented</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">&#10004;</span>
+                        Edited index.html
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">&#10004;</span>
+                        Edited contacts.html
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">&#10004;</span>
+                        List all Artists
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">&#10004;</span>
+                        Create new Artist
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h2 style="margin-top:0px;">To do list</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        List all Albums
+                    </li>
+                    <li class="list-group-item">
+                        Create new Album
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
