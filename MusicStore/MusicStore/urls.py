@@ -22,24 +22,9 @@ urlpatterns = [
 
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),
-    url(r'^login/$',
-        django.contrib.auth.views.login,
-        {
-            'template_name': 'app/login.html',
-            'authentication_form': app.forms.BootstrapAuthenticationForm,
-            'extra_context':
-            {
-                'title': 'Log in',
-                'year': datetime.now().year,
-            }
-        },
-        name='login'),
-    url(r'^logout$',
-        django.contrib.auth.views.logout,
-        {
-            'next_page': '/',
-        },
-        name='logout'),
+    url(r'^login/$', app.views.login, name = 'login'),
+    url(r'^register/$', app.views.register, name = 'register'),
+    url(r'^logout$', app.views.logout, name='logout'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

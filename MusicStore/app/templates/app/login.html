@@ -13,13 +13,13 @@
                 <div class="form-group">
                     <label for="id_username" class="col-md-2 control-label">User name</label>
                     <div class="col-md-10">
-                        {{ form.username }}
+                        <input type="text" name="username" id="id_username" class="form-control" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="id_password" class="col-md-2 control-label">Password</label>
                     <div class="col-md-10">
-                        {{ form.password }}
+                        <input type="password" name="password" id="id_password" class="form-control" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -28,8 +28,8 @@
                         <input type="submit" value="Log in" class="btn btn-default" />
                     </div>
                 </div>
-                {% if form.errors %}
-                <p class="validation-summary-errors">Please enter a correct user name and password.</p>
+                {% if warning %}
+                <p class="validation-summary-errors">{{ warning }}</p>
                 {% endif %}
             </form>
         </section>
